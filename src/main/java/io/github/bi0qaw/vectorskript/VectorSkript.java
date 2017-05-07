@@ -1,11 +1,11 @@
 
 package io.github.bi0qaw.vectorskript;
 
-import ch.njol.skript.Skript;
-import io.github.bi0qaw.vectorskript.vector.VectorRegister;
-import io.github.bi0qaw.vectorskript.vector.VectorType;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
+
+import ch.njol.skript.Skript;
+import io.github.bi0qaw.vectorskript.vector.VectorRegister;
 
 public class VectorSkript extends JavaPlugin {
 
@@ -18,7 +18,7 @@ public class VectorSkript extends JavaPlugin {
 		Skript.registerAddon(this);
 		RandomSk = Bukkit.getPluginManager().getPlugin("RandomSK") != null;
 		if (!RandomSk) {
-			new VectorType();
+//			new VectorType();		//Temporarily not register this
 		}
 		new VectorRegister();
 	}

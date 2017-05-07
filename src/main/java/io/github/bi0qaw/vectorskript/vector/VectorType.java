@@ -98,7 +98,7 @@ public class VectorType {
 					}
 
 					@Override
-					protected boolean canBeInstantiated() {
+					public boolean canBeInstantiated(Class<? extends Vector> arg0) {
 						return false;
 					}
 				})
